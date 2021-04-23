@@ -78,3 +78,20 @@ document.write("<br>Selected Cities: <br>" + selectedCities.join(" "))
 
 var phones = ["Samsung", "Motorola", "Nokia", "Sony", "Haier"]
 document.write("<select> <option>"+ phones[0] +"</option><option>"+phones[1] +"</option> <option>"+phones[2] +"</option> <option>"+phones[3] +"</option> <option>"+phones[4] +"</option> </select>")
+
+
+ /*********Phone book *********/
+var names = ["Ahmed", "Ali", "Nadir", "Ghous", "Bashir", "Majid"]
+var numbers = ["023883487", "9829348","98372429","163877492","74832309","02839482"]
+
+var inp_name = prompt("Enter name ") 
+var inp_number = prompt("Enter Phone no. ") 
+
+names.push(inp_name) 
+numbers.push(inp_number) 
+
+var remove = prompt("Enter Name to remove frome Phone")
+
+var ind = names.indexOf(remove);
+names.splice(ind, 1)
+numbers.splice(ind,1)
