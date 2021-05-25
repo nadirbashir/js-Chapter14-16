@@ -12,7 +12,7 @@ document.write("1) " + qualification[0]+"<br>");
 
 for(var i = 1; i < qualification.length; i++){
     
-    document.write(i+") " + qualification[i]+"<br>");
+    document.write(i+") " + qusalification[i]+"<br>");
 }
 
 
